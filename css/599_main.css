@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+@media (max-width:599px) {
+
+    /*wrap*/
+    #wrap {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /*슬라이더: 이미지 대체*/
+    #slider {
+        width: 100%;
+        height: 930px;
+        margin: 0 auto;
+        /*
+        background-image: url(img/slide_bg/2.jpg);
+        background-position: center;
+        background-size: cover;
+        바디에서 스타일 값*/
+    }
+
+    /*슬라이더텍*/
+    .s-textbox {
+        position: relative;
+        top: 330px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #777;
+        text-transform: uppercase;
+    }
+
+    .s-textbox p:nth-of-type(1) {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0 auto;
+    }
+
+    .s-textbox p:nth-of-type(2) {
+        font-size: 105px;
+        font-family: 'Malgun Gothic';
+        margin: 0 auto;
+        font-weight: 600;
+
+    }
+
+    .s-textbox p:nth-of-type(3) {
+        font-size: 55px;
+        font-family: 'Malgun Gothic';
+        margin: 0 auto;
+        font-weight: 600;
+    }
+
+    .s-textbox p:nth-of-type(4) {
+        font-size: 15px;
+        font-weight: 600;
+        display: inline;
+    }
+
+    .s-textbox p a {
+        color: #fff;
+    }
+
+    .s-textbox p:nth-of-type(5) {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 300px;
+    }
+
+    /*슬라이더 : 호버*/
+    .s-textbox p:nth-of-type(4):hover {
+        border-bottom: 2px solid #fff;
+        cursor: pointer;
+    }
+
+    /*섹션*/
+    section {
+        margin: 0 auto;
+    }
+
+    /*브랜드뉴스*/
+    .news {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .news-box {
+        width: 455px;
+        height: 163px;
+        display: flex;
+        margin-bottom: 3%;
+    }
+
+    .news-box:nth-of-type(1) {
+        padding-bottom: 30px;
+    }
+
+    .news-box a {
+        display: flex;
+    }
+
+    /*뉴스포토*/
+    .n-photobox {
+        width: 40%;
+        height: 163px;
+        overflow: hidden;
+    }
+
+    .n-photobox img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        transition: 0.7s;
+    }
+
+    /*뉴스텍*/
+    .n-textbox {
+        width: 60%;
+        height: 163px;
+        padding: 18px;
+    }
+
+    .n-textbox h1 {
+        font-size: 15px;
+        font-weight: 600;
+        color: #2f2f2f;
+        display: block;
+        padding-bottom: 10px;
+        line-height: 23px;
+    }
+
+    .n-textbox p {
+        font-size: 20px;
+        font-weight: 300;
+        color: #222;
+    }
+
+    .n-textbox .hidden-text {
+        font-size: 12px;
+        font-weight: 600;
+        color: #2f2f2f;
+        padding-top: 30px;
+        display: none;
+    }
+
+    /*뉴스박스 : 호버*/
+    .news-box:hover .hidden-text {
+        display: block;
+    }
+
+    .news-box:hover .n-textbox h1 {
+        border-bottom: 2px solid #222;
+    }
+
+    .news-box:hover .n-photobox img {
+        transform: scale(1.2);
+    }
+
+    /*배너1*/
+    .banner1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .banner1-box {
+        width: 100%;
+        height: 400px;
+        background-color: #111;
+        margin-bottom: 3%;
+    }
+
+    /*배너1포토*/
+    .b1-photobox {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .b1-photobox img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        transform: scale(1);
+        transition: 0.5s;
+    }
+
+    /*배너1텍*/
+    .b1-textbox {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 300px;
+        position: relative;
+    }
+
+    .b1-textbox h1 {
+        font-size: 60px;
+        line-height: 120px;
+    }
+
+    .banner1-box:nth-of-type(3) h1 {
+        font-size: 50px;
+    }
+
+    .b1-textbox p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    /*배너1박스 : 호버*/
+    .banner1-box:hover .b1-textbox p {
+        border-bottom: 2px solid #fff;
+    }
+
+    .banner1-box:hover .b1-photobox img {
+        transform: scale(1.2);
+    }
+
+    /*센터텍스트*/
+    .cen-text {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    /*센텍메인*/
+    .main-text {
+        max-width: 100%;
+        height: auto;
+        font-weight: 600;
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+
+    /*센텍메인 텍스트*/
+    .main-text p {
+        font-size: 6.5vw;
+        color: #222;
+        line-height: 7.2vw;
+    }
+
+    /*센텍메인 중간 이미지*/
+    .main-text p img {
+        width: 13vw;
+        height: auto;
+    }
+
+    /*센텍서브*/
+    .sub-text {
+        width: 100%;
+        height: 50px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sub-text p a {
+        font-size: 15px;
+        color: #000;
+        font-weight: 600;
+    }
+
+    .sub-text img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /*배너2*/
+    .banner2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .banner2-box {
+        width: 100%;
+        height: 400px;
+        background-color: #111;
+        margin-bottom: 3%;
+    }
+
+    /*배너2포토*/
+    .b2-photobox {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .b2-photobox img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        transform: scale(1);
+        transition: 0.5s;
+    }
+
+    /*배너2텍*/
+    .b2-textbox {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 300px;
+        position: relative;
+    }
+
+    .b2-textbox h1 {
+        font-size: 60px;
+        line-height: 120px;
+    }
+
+    .banner2-box:nth-of-type(2) h1 {
+        font-size: 50px;
+    }
+
+    .b2-textbox p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    /*배너2박스 : 호버*/
+    .banner2-box:hover .b2-textbox p {
+        border-bottom: 2px solid #fff;
+    }
+
+    .banner2-box:hover .b2-photobox img {
+        transform: scale(1.2);
+    }
+
+    /*센터바*/
+    .cen-bar {
+        width: 100%;
+        height: auto;
+    }
+
+    /*센터바-센박스*/
+    .cen-box {
+        width: 100%;
+        height: 1020px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .cb-box {
+        width: 50%;
+        height: 315px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .cb-textbox {
+        font-size: 13px;
+        color: #222;
+        font-weight: 600;
+        display: none;
+        transition: 0.7s;
+    }
+
+    /*센터바-센박-포토박스*/
+    .cb-box .cb-photobox {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+    }
+
+    .cb-box .cb-photobox img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        transition: 0.7s;
+    }
+
+    /*센터바 : 호버*/
+    .cb-box .cb-photobox img:hover {
+        transform: scale(1.2);
+    }
+
+    .cb-box a:hover~.cb-textbox {
+        display: block;
+    }
+
+    /*센터바-서브텍*/
+    .cb-sub-text {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cb-sub-text p a {
+        font-size: 15px;
+        color: #000;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .cb-sub-text img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /*센터바 바텀*/
+    .cen-bott {
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .bt-photobox {
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        background-color: #111;
+        overflow: hidden;
+    }
+
+    .bt-photobox img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        transform: scale(1);
+        transition: 0.7s;
+    }
+
+    .bt-textbox {
+        text-align: center;
+        position: relative;
+        color: #fff;
+        bottom: 270px;
+        text-transform: uppercase;
+    }
+
+    .bt-textbox h2 {
+        font-size: 60px;
+        padding-bottom: 40px;
+    }
+
+    .bt-textbox p {
+        font-size: 15px;
+        font-weight: 600;
+        display: inline;
+    }
+
+    /*센터바 바텀 : 호버*/
+    .bt-photobox:hover~.bt-textbox p {
+        border-bottom: 2px solid #fff;
+    }
+
+    .bt-photobox:hover img {
+        transform: scale(1.2);
+    }
+}

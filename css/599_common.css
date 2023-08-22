@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+@media (max-width:599px) {
+
+    /*wrap*/
+    #wrap {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /*메인헤더*/
+    .main-header {
+        margin: 0 auto;
+        width: 100%;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        position: absolute;
+    }
+
+    /*메인로고*/
+    #logo {
+        width: 160px;
+        height: 75px;
+    }
+
+    #logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*메인메뉴*/
+    .b {
+        display: none;
+    }
+
+    .b ul {
+        display: flex;
+    }
+
+    .b ul li a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px;
+        display: inline;
+    }
+
+    .b ul li a:hover {
+        border-bottom: 3px solid #fff;
+    }
+
+    /*메인햄버거*/
+    .a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .a:hover {
+        cursor: pointer;
+    }
+
+
+    /*세컨랩*/
+    .c {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: none;
+    }
+
+    /*세컨헤더*/
+    #sec-header {
+        margin: 0 auto;
+        width: 100%;
+        height: 230px;
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        border-bottom: 1px solid #d3d3d3;
+        padding: 30px;
+    }
+
+    /*세컨로고*/
+    #logo2 {
+        width: 160px;
+        height: 75px;
+        left: 0;
+    }
+
+    #logo2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*세컨엑스표*/
+    .d {
+        width: 40px;
+        height: 40px;
+    }
+
+    .d:hover {
+        cursor: pointer;
+        transform: rotate(45deg);
+    }
+
+    /*세컨언어설정*/
+    #sec-header nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #sec-header nav ul li a {
+        color: #111;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+        margin-right: 17px;
+        display: inline-block;
+    }
+
+    #sec-header nav ul li a:hover {
+        border-bottom: 3px solid #111;
+    }
+
+    /*세컨예약*/
+    .booking ul {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .booking ul li a {
+        color: #111;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 12px;
+        line-height: 30px;
+    }
+
+    .booking ul li a:hover {
+        border-bottom: 3px solid #111;
+    }
+
+    .booking img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /*세컨메뉴 : 세컨박스2 -600px, 3 -1000px 안 보이기*/
+    #sec-box2 {
+        display: none;
+    }
+
+    #sec-box3 {
+        display: none;
+    }
+
+    /*세컨메뉴-sec-box1 : 599px*/
+    #sec-box1 {
+        width: 100%;
+        height: 2470px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /*1번box*/
+    .box:nth-of-type(1) {
+        height: 670px;
+    }
+
+    .box:nth-of-type(1) .box2 {
+        height: 370px;
+    }
+
+    /*2번box*/
+    .box:nth-of-type(2) {
+        height: 570px;
+    }
+
+    .box:nth-of-type(2) .box2 {
+        height: 270px;
+    }
+
+    /*3번box*/
+    .box:nth-of-type(3) {
+        height: 650px;
+    }
+
+    .box:nth-of-type(3) .box1 {
+        height: 380px;
+    }
+
+    .box:nth-of-type(3) .box2 {
+        height: 270px;
+    }
+
+    /*4번box*/
+    .box:nth-of-type(4) {
+        height: 550px;
+    }
+
+    .box:nth-of-type(4) .box2 {
+        height: 280px;
+    }
+
+    /*세컨메뉴의숫자*/
+    .box p {
+        font-size: 13px;
+        color: #222;
+    }
+
+    /*세컨메뉴*/
+    .box ul li {
+        padding: 0 0 20px 0;
+    }
+
+    .box ul li a {
+        color: #2f2f2f;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .box ul li a:hover {
+        border-bottom: 3px solid #2f2f2f;
+    }
+
+    .box ul li:nth-of-type(1) a {
+        font-size: 30px;
+    }
+
+    .box ul li:nth-of-type(1) {
+        padding: 15px 0 40px 0;
+    }
+
+    /*큰box에서 작은box 두 개로 나눔, box1=상, box2=하*/
+    .box1 {
+        height: 300px;
+    }
+
+
+    /*푸터*/
+    footer {
+        border-top: 1px solid #d3d3d3;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    /*푸터탑*/
+    .ft-top {
+        width: 100%;
+        height: 100px;
+        padding-top: 10px;
+    }
+
+    /*푸터박스1*/
+    .ft-box1 {
+        width: 100%;
+        height: 50px;
+        float: left;
+    }
+
+    .ft-b1-5 {
+        display: none;
+    }
+
+    .ft-box1 ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+
+    .ft-box1 ul li {
+        font-size: 16px;
+        color: #2f2f2f;
+        font-weight: 500;
+    }
+
+    .ft-box1 ul li a {
+        font-size: 16px;
+        color: #2f2f2f;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .ft-box1 ul li a:hover {
+        border-bottom: 2px solid #2f2f2f;
+    }
+
+    /*푸터박스2*/
+    .ft-box2 {
+        width: 100%;
+        height: 30px;
+        float: right;
+        padding-top: 10px;
+    }
+
+    .ft-box2 ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ft-box2 ul li a {
+        padding-right: 30px;
+    }
+
+    .ft-box2 .sns-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ft-box2 .sns-img:hover {
+        opacity: 0.7;
+        transition: 0.7s;
+    }
+
+    /*푸터바텀*/
+    .ft-bottom {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    /*푸터박스3*/
+    .ft-box3 {
+        width: 100%;
+        height: 162px;
+    }
+
+    .ft-box3 p {
+        font-size: 16px;
+        color: #222;
+        line-height: 20px;
+    }
+
+    /*푸터박스4*/
+    .ft-box4 {
+        width: 100%;
+        height: 85px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .ft-box4 h3 {
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+
+    .ft-box4 input {
+        width: 100%;
+        height: 47px;
+        color: #919191;
+        font-weight: 600;
+        border: 0;
+        border-bottom: 2px solid #222;
+        background-image: url(img/icon/arrow.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: right;
+    }
+
+    /*푸터박스5*/
+    .ft-box5 {
+        width: 150px;
+        height: 70px;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .ft-box5 a img {
+        width: 100%;
+        height: 70px;
+    }
+}
